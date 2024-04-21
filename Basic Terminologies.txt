@@ -1,0 +1,6 @@
+What is Big Data
+
+Big data is a term for:
+• massive data sets, with varied and complex structure
+• with the difficulties of storing and analysing
+• visualizing for further processes or results.
