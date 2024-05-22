@@ -1,6 +1,68 @@
 What is Big Data
 
 Big data is a term for:
-• massive data sets, with varied and complex structure
-• with the difficulties of storing and analysing
-• visualizing for further processes or results.
+• Massive data sets, with varied and complex structure
+• With the difficulties of storing and analysing
+• Visualizing for further processes or results.
+
+Building a Data Lake from Scratch in Amazon S3
+• Joining Semi-Structured and Structured Data:
+• A data lake in Amazon S3 can store vast amounts of structured, semi-structured, and unstructured data. Joining these different types of data allows for comprehensive analytics and insights.
+
+Lake House Architecture Design
+Best Practices for Cost and Performance:
+• Data Partitioning: Organize data in partitions to improve query performance and reduce costs.
+• Data Compression: Use efficient data formats like Parquet or ORC to reduce storage costs and improve query speed.
+• Lifecycle Policies: Implement lifecycle policies to transition older data to cheaper storage tiers.
+• Data Governance: Ensure proper access controls and data quality checks are in place.
+
+Data Lake vs. Data Warehouse
+Data Lake:
+• Stores raw data in its native format.
+• Handles a variety of data types and formats.
+• Suitable for large-scale data analytics.
+
+Data Warehouse:
+• Stores structured, processed data.
+• Optimized for fast query performance.
+• Suitable for reporting and business intelligence.
+
+Data Lake Design in Layers
+Layered Architecture for Cost-Performance:
+• Landing Zone: Raw data is ingested here.
+• Cleansed Zone (Single Source of Truth, SSOT): Data is cleaned and validated.
+• Reporting Zone: Data is optimized for query performance and used by BI tools.
+• WORM Model (Write Once, Read Many):
+Data is written once and read multiple times, ensuring immutability and data integrity.
+
+AWS Data Catalog
+Centralized Metadata Repository:
+• Maintains metadata for data stored in the data lake.
+• Supports data discovery, schema evolution, and governance.
+
+ETL in AWS Glue Spark Jobs
+Data Transformation and Loading:
+• AWS Glue Spark jobs handle ETL processes.
+• Transform data using Spark within Glue jobs.
+• Integrate with Amazon SageMaker for advanced analytics using Jupyter Notebooks.
+
+Amazon SNS for Alerting
+Notification Service:
+• Send alerts and notifications for data processing events.
+• Integrate with other AWS services for monitoring and alerting.
+
+SQL using Amazon Athena and Spark SQL
+Query Optimized Data Layers:
+• Use Amazon Athena for serverless SQL queries on S3 data.
+• Use Spark SQL for complex transformations within AWS Glue.
+• Optimized data layers improve query performance and reduce costs.
+
+Ingest Changes Incrementally and Schema Evolution
+Handling Incremental Data and Schema Changes:
+• Implement incremental data ingestion to keep the data lake updated.
+• Support schema evolution to handle changes in data structure without disrupting processing.
+
+BI Dashboards in Amazon QuickSight
+Business Intelligence and Visualization:
+• Use Amazon QuickSight to create interactive dashboards.
+• Connect to the data lake for real-time insights and reporting.

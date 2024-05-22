@@ -1,0 +1,23 @@
+Name: AWS Glue Data Catalog                                      Name: AWS Glue Data Catalog
+Database: db_youtube_cleaned                                     Database: db_youtube_cleaned
+Table: cleaned_region                                            Table: cleaned_statistics_reference_data
+
+
+
+
+
+                                        JOIN
+                                        Inner Join
+
+
+
+
+
+                                    Name : Amazon S3
+                                    Format : Paruqet
+                                    Compression type : Snappy
+                                    S3 Target Location : s3://youtube-de-analytics-us-east1-dev
+                                    Database: db_youtube_analytics
+                                    Table name: final_analytics
+                                    Partition (0): region
+                                    Partition (1): category_id   
